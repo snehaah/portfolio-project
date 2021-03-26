@@ -114,8 +114,17 @@ img {
     height: auto;
 }
 
+h2, main h1 {
+    padding-top: 24px;
+    padding-bottom: 8px;
+}
+
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.card-img {
     width: 100%;
 }
 
