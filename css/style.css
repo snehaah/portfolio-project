@@ -69,9 +69,10 @@ header {
 }
 
 .active {
-    background-color: #E07310;
+    background-color: #753900;
     font-weight: 700;
     font-style: italic;
+    color: black;
 }
 
 .banner-wrapper {
@@ -133,7 +134,7 @@ h2, main h1 {
 }
 
 footer {
-    background-color: #E07310;
+    background-color: #202020;
     text-align: center;
     color: white;
     padding: 16px 8px;
@@ -153,6 +154,16 @@ footer {
     grid-row-gap: 16px;
     grid-column-gap: 16px;
     padding: 16px;
+    text-align: center;
+}
+
+.shinobi {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    padding: 16px;
+    text-align: center;
 }
 
 .contact-container {
