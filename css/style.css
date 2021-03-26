@@ -113,3 +113,72 @@ img {
     width: 100%;
     height: auto;
 }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.card-title, .card-description {
+    padding: 4px;
+}
+
+footer {
+    background-color: #E07310;
+    text-align: center;
+    color: white;
+    padding: 16px 8px;
+    margin: 0;
+}
+
+.hokages {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px;
+    padding: 16px;
+}
+
+.clans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 16px;
+    grid-column-gap: 16px;
+    padding: 16px;
+}
+
+.contact-container {
+    margin: 16px;
+}
+
+.contact-banner > * {
+    font-size: 1.2rem;
+    padding: 16px 0;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 0;
+}
+
+.field input {
+    height: 32px;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+input[type="submit"] {
+    background-color: #E07310;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    height: 48px;
+    border-radius: 4px;
+}
