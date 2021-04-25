@@ -11,7 +11,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PWYTKYNT7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-5PWYTKYNT7');
@@ -23,11 +27,11 @@
 </div>
 <header>
     <div class="header-title">
-        <img src="images/ic_konoha_white.png" alt="logo" id="logo" />
+        <img src="images/ic_konoha_white.png" alt="Konoha logo" id="logo" />
         <h1>Konoha</h1>
     </div>
-    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
-    <label for="hamburger-toggle" class="hamburger-menu">
+    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle" aria-labelledby="menu">
+    <label for="hamburger-toggle" class="hamburger-menu" id="menu" aria-label="menu">
         <span></span>
         <span></span>
         <span></span>
@@ -45,7 +49,7 @@
         </ul>
     </nav>
 </header>
-<main id="main">
+<main id="main" tabindex="0">
     <div class="main-content">
         <section id="request-mission">
             <h2 class="section-heading">Request a mission?</h2>

@@ -52,6 +52,11 @@
     height: 100%;
 }
 
+.shinobi-stats-grid a {
+    text-decoration: none;
+    color: var(--color-text-light)
+}
+
 /*Tablet styles*/
 @media all and (min-width: 600px) {
     .shinobi-flip-cards {

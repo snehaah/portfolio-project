@@ -13,7 +13,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PWYTKYNT7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-5PWYTKYNT7');
@@ -25,17 +29,17 @@
 </div>
 <header>
     <div class="header-title">
-        <img src="images/ic_konoha_white.png" alt="logo" id="logo" />
+        <img src="images/ic_konoha_white.png" alt="Konoha logo" id="logo" />
         <h1>Konoha</h1>
     </div>
-    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
-    <label for="hamburger-toggle" class="hamburger-menu">
+    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle" aria-labelledby="menu">
+    <label for="hamburger-toggle" class="hamburger-menu" id="menu" aria-label="menu">
         <span></span>
         <span></span>
         <span></span>
     </label>
     <nav>
-        <label for="hamburger-toggle" class="modal"></label>
+        <label for="hamburger-toggle" class="modal" aria-labelledby="hamburger-toggle"></label>
         <ul class="navbar">
             <li class="active"><a href="index.html">
                 <p>Home</p>
@@ -47,7 +51,7 @@
         </ul>
     </nav>
 </header>
-<main id="main" class="parallax">
+<main id="main" class="parallax" tabindex="0">
     <div class="parallax-layer" id="parallax-layer-7">
         <img src="images/parallax/layer-7.png" alt="" class="parallax-layer-image" />
     </div>
@@ -274,9 +278,9 @@
                     </div>
                     <div class="carousel-buttons" data-glide-el="controls">
                         <button class="carousel-button carousel-button-left fa fa-chevron-left"
-                                data-glide-dir="<"></button>
+                                data-glide-dir="<" aria-label="left_button" title="left_button"></button>
                         <button class="carousel-button carousel-button-right fa fa-chevron-right"
-                                data-glide-dir=">"></button>
+                                data-glide-dir=">" aria-label="right_button" title="right_button"></button>
                     </div>
                 </div>
             </section>

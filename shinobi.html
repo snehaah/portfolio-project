@@ -13,7 +13,11 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PWYTKYNT7"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', 'G-5PWYTKYNT7');
@@ -25,11 +29,11 @@
 </div>
 <header>
     <div class="header-title">
-        <img src="images/ic_konoha_white.png" alt="logo" id="logo" />
+        <img src="images/ic_konoha_white.png" alt="Konoha logo" id="logo" />
         <h1>Konoha</h1>
     </div>
-    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
-    <label for="hamburger-toggle" class="hamburger-menu">
+    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle" aria-labelledby="menu">
+    <label for="hamburger-toggle" class="hamburger-menu" id="menu" aria-label="menu">
         <span></span>
         <span></span>
         <span></span>
@@ -47,7 +51,7 @@
         </ul>
     </nav>
 </header>
-<main id="main">
+<main id="main" tabindex="0">
     <div class="main-content">
         <section id="konoha-shinobi" class="edge">
             <h2 class="section-heading">Shinobi of Konoha</h2>
@@ -108,9 +112,9 @@
                 </div>
                 <div class="carousel-buttons" data-glide-el="controls">
                     <button class="carousel-button carousel-button-left fa fa-chevron-left"
-                            data-glide-dir="<"></button>
+                            data-glide-dir="<" aria-label="left_button" title="left_button"></button>
                     <button class="carousel-button carousel-button-right fa fa-chevron-right"
-                            data-glide-dir=">"></button>
+                            data-glide-dir=">" aria-label="right_button" title="right_button"></button>
                 </div>
             </div>
             <div class="shinobi-flip-cards">
@@ -125,12 +129,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Naruto</p>
-                                    <p>Age</p><p>:</p><p>17</p>
-                                    <p>Height</p><p>:</p><p>166</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Wind</p>
-                                    <p>Clan</p><p>:</p><p>Uzumaki</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Naruto</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>17</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>166</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Wind</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#uzumaki"><p>Uzumaki</p></a>
                                 </div>
                             </div>
                         </div>
@@ -147,12 +162,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Sakura</p>
-                                    <p>Age</p><p>:</p><p>16</p>
-                                    <p>Height</p><p>:</p><p>161</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Fire</p>
-                                    <p>Clan</p><p>:</p><p>Haruno</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Sakura</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>16</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>161</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Fire</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="#"><p>Haruno</p></a>
                                 </div>
                             </div>
                         </div>
@@ -169,12 +195,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Sasuke</p>
-                                    <p>Age</p><p>:</p><p>17</p>
-                                    <p>Height</p><p>:</p><p>168</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Lightning</p>
-                                    <p>Clan</p><p>:</p><p>Uchiha</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Sasuke</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>17</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>168</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Lightning</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#uchiha"><p>Uchiha</p></a>
                                 </div>
                             </div>
                         </div>
@@ -191,12 +228,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Ino</p>
-                                    <p>Age</p><p>:</p><p>16</p>
-                                    <p>Height</p><p>:</p><p>162.2</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Yang</p>
-                                    <p>Clan</p><p>:</p><p>Yamanaka</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Ino</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>16</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>162.2</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Yang</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#yamanaka"><p>Yamanaka</p></a>
                                 </div>
                             </div>
                         </div>
@@ -213,12 +261,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Shikamaru</p>
-                                    <p>Age</p><p>:</p><p>17</p>
-                                    <p>Height</p><p>:</p><p>170</p>
-                                    <p>Rank</p><p>:</p><p>Jonin</p>
-                                    <p>Affinity</p><p>:</p><p>Yin</p>
-                                    <p>Clan</p><p>:</p><p>Nara</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Shikamaru</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>17</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>170</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Jonin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Yin</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#nara"><p>Nara</p></a>
                                 </div>
                             </div>
                         </div>
@@ -235,12 +294,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Choji</p>
-                                    <p>Age</p><p>:</p><p>17</p>
-                                    <p>Height</p><p>:</p><p>172.3</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Earth</p>
-                                    <p>Clan</p><p>:</p><p>Akimichi</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Choji</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>17</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>172.3</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Earth</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#akimichi"><p>Akimichi</p></a>
                                 </div>
                             </div>
                         </div>
@@ -257,12 +327,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Hinata</p>
-                                    <p>Age</p><p>:</p><p>16</p>
-                                    <p>Height</p><p>:</p><p>160</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Fire</p>
-                                    <p>Clan</p><p>:</p><p>Hyuga</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Hinata</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>16</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>160</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Fire</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#hyuga"><p>Hyuga</p></a>
                                 </div>
                             </div>
                         </div>
@@ -279,12 +360,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Kiba</p>
-                                    <p>Age</p><p>:</p><p>17</p>
-                                    <p>Height</p><p>:</p><p>169.1</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Earth</p>
-                                    <p>Clan</p><p>:</p><p>Inuzaka</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Kiba</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>17</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>169.1</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Earth</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#inuzaka"><p>Inuzaka</p></a>
                                 </div>
                             </div>
                         </div>
@@ -301,12 +393,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Shino</p>
-                                    <p>Age</p><p>:</p><p>16</p>
-                                    <p>Height</p><p>:</p><p>160</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Earth</p>
-                                    <p>Clan</p><p>:</p><p>Aburame</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Shino</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>16</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>160</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Earth</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#aburame"><p>Aburame</p></a>
                                 </div>
                             </div>
                         </div>
@@ -323,12 +426,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Asuma</p>
-                                    <p>Age</p><p>:</p><p>31</p>
-                                    <p>Height</p><p>:</p><p>190.8</p>
-                                    <p>Rank</p><p>:</p><p>Jonin</p>
-                                    <p>Affinity</p><p>:</p><p>Wind</p>
-                                    <p>Clan</p><p>:</p><p>Sarutobi</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Asuma</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>31</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>190.8</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Jonin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Wind</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#sarutobi"><p>Sarutobi</p></a>
                                 </div>
                             </div>
                         </div>
@@ -345,12 +459,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Might Guy</p>
-                                    <p>Age</p><p>:</p><p>31</p>
-                                    <p>Height</p><p>:</p><p>184</p>
-                                    <p>Rank</p><p>:</p><p>Jonin</p>
-                                    <p>Affinity</p><p>:</p><p>Fire</p>
-                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Might Guy</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>31</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>184</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Jonin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Fire</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="#"><p>N/A</p></a>
                                 </div>
                             </div>
                         </div>
@@ -367,12 +492,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Iruka</p>
-                                    <p>Age</p><p>:</p><p>27</p>
-                                    <p>Height</p><p>:</p><p>178</p>
-                                    <p>Rank</p><p>:</p><p>Chunin</p>
-                                    <p>Affinity</p><p>:</p><p>Fire</p>
-                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Iruka</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>27</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>178</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Chunin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Fire</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="#"><p>N/A</p></a>
                                 </div>
                             </div>
                         </div>
@@ -389,12 +525,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Itachi</p>
-                                    <p>Age</p><p>:</p><p>21</p>
-                                    <p>Height</p><p>:</p><p>178</p>
-                                    <p>Rank</p><p>:</p><p>Exiled</p>
-                                    <p>Affinity</p><p>:</p><p>Fire</p>
-                                    <p>Clan</p><p>:</p><p>Uchiha</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Itachi</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>21</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>178</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Exiled</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Fire</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#uchiha"><p>Uchiha</p></a>
                                 </div>
                             </div>
                         </div>
@@ -411,12 +558,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Jiraiya</p>
-                                    <p>Age</p><p>:</p><p>54</p>
-                                    <p>Height</p><p>:</p><p>191.2</p>
-                                    <p>Rank</p><p>:</p><p>Jonin</p>
-                                    <p>Affinity</p><p>:</p><p>Fire</p>
-                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Jiraiya</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>54</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>191.2</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Jonin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Fire</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="#"><p>N/A</p></a>
                                 </div>
                             </div>
                         </div>
@@ -433,12 +591,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Kakashi</p>
-                                    <p>Age</p><p>:</p><p>31</p>
-                                    <p>Height</p><p>:</p><p>181</p>
-                                    <p>Rank</p><p>:</p><p>Jonin</p>
-                                    <p>Affinity</p><p>:</p><p>Lightning</p>
-                                    <p>Clan</p><p>:</p><p>Hatake</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Kakashi</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>31</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>181</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Jonin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Lightning</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#hatake"><p>Hatake</p></a>
                                 </div>
                             </div>
                         </div>
@@ -455,12 +624,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Orouchimaru</p>
-                                    <p>Age</p><p>:</p><p>54</p>
-                                    <p>Height</p><p>:</p><p>172</p>
-                                    <p>Rank</p><p>:</p><p>Anbu</p>
-                                    <p>Affinity</p><p>:</p><p>Wind</p>
-                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Orouchimaru</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>54</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>172</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Anbu</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Wind</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="#"><p>N/A</p></a>
                                 </div>
                             </div>
                         </div>
@@ -477,12 +657,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Shikaku</p>
-                                    <p>Age</p><p>:</p><p>42</p>
-                                    <p>Height</p><p>:</p><p>175.2</p>
-                                    <p>Rank</p><p>:</p><p>Jonin</p>
-                                    <p>Affinity</p><p>:</p><p>Yin</p>
-                                    <p>Clan</p><p>:</p><p>Nara</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Shikaku</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>42</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>175.2</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Jonin</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Yin</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#nara"><p>Nara</p></a>
                                 </div>
                             </div>
                         </div>
@@ -499,12 +690,23 @@
                         <div class="flip-card-back">
                             <div class="shinobi-stats">
                                 <div class="shinobi-stats-grid">
-                                    <p>Name</p><p>:</p><p>Tsunade</p>
-                                    <p>Age</p><p>:</p><p>55</p>
-                                    <p>Height</p><p>:</p><p>163.1</p>
-                                    <p>Rank</p><p>:</p><p>Kage</p>
-                                    <p>Affinity</p><p>:</p><p>Lightning</p>
-                                    <p>Clan</p><p>:</p><p>Senju</p>
+                                    <p>Name</p>
+                                    <p>:</p>
+                                    <p>Tsunade</p>
+                                    <p>Age</p>
+                                    <p>:</p>
+                                    <p>55</p>
+                                    <p>Height</p>
+                                    <p>:</p>
+                                    <p>163.1</p>
+                                    <p>Rank</p>
+                                    <p>:</p>
+                                    <p>Kage</p>
+                                    <p>Affinity</p>
+                                    <p>:</p>
+                                    <p>Lightning</p>
+                                    <p>Clan</p>
+                                    <p>:</p><a href="clans.html#senju"><p>Senju</p></a>
                                 </div>
                             </div>
                         </div>
