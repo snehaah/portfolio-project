@@ -1,0 +1,191 @@
+@import "style.css";
+
+/*Default styles*/
+#parallax-layer-1 {
+    display: block;
+}
+
+/*Mobile styles*/
+#parallax-layer-1 > .parallax-layer-image {
+    display: none;
+}
+
+.no-parallax-image {
+    display: block;
+    width: 100%;
+}
+
+section#home-about, section#history {
+    color: var(--color-text-light);
+    background-color: #351B1A;
+}
+
+section#places {
+    background-color: white;
+}
+
+.place {
+    display: flex;
+    flex-direction: column;
+    padding: 0 24px;
+}
+
+.place-image {
+}
+
+.place-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin: auto;
+    padding: 16px;
+}
+
+.place-description, .hokage-description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 32px;
+}
+
+.place-heading, .hokage-heading {
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 32px auto;
+}
+
+.place-description > p, .hokage-description > p {
+    margin: auto;
+    text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.2;
+    padding: 0 24px;
+}
+
+section#hokages {
+    background-color: #B6D69A; /* TODO: or white? */
+    padding-bottom: 0;
+}
+
+.hokage {
+    display: flex;
+    flex-direction: column;
+}
+
+.hokage-image {
+    width: 100%;
+    object-fit: contain;
+}
+
+#hokage-hashirama-senju {
+    background-color: #B6D69A;
+}
+
+#hokage-tobirama-senju {
+    color: white;
+    background-color: #105E8E;
+}
+
+#hokage-hiruzen-sarutobi {
+    background-color: #F09956;
+}
+
+#hokage-minato-namikaze {
+    color: white;
+    background-color: #11649D;
+}
+
+#hokage-tsunade-senju {
+    background-color: #87A68C;
+}
+
+#hokage-kakashi-hatake {
+    color: white;
+    background-color: #59627E;
+}
+
+/*Mobile only styles*/
+@media all and (max-width: 599px) {
+    .hokage-image-desktop {
+        display: none;
+    }
+}
+
+/*Tablet and Desktop styles*/
+@media all and (min-width: 600px) {
+    #parallax-layer-1 {
+        transform: translateZ(-0px) scale(1);
+    }
+
+    #parallax-layer-2 {
+        transform: translateZ(-1px) scale(2);
+    }
+
+    #parallax-layer-3 {
+        transform: translateZ(-2px) scale(3);
+    }
+
+    #parallax-layer-4 {
+        transform: translateZ(-3px) scale(4);
+    }
+
+    #parallax-layer-5 {
+        transform: translateZ(-4px) scale(5);
+    }
+
+    #parallax-layer-6 {
+        transform: translateZ(-5px) scale(6);
+    }
+
+    #parallax-layer-7 {
+        transform: translateZ(-6px) scale(7);
+    }
+
+    #parallax-layer-1 > .parallax-layer-image {
+        display: block;
+    }
+
+    .no-parallax-image {
+        display: none;
+    }
+
+    .place {
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .place-image {
+        flex-grow: 1;
+        max-width: 50%;
+        padding: 0 8px;
+    }
+
+    .place-description, .hokage-description {
+        flex-grow: 1;
+        max-width: 600px;
+        padding: 0 8px 24px;
+    }
+
+    .hokage {
+        display: block;
+        position: relative;
+    }
+
+    .hokage-description {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        width: 50%;
+        max-width: 600px;
+        transform: translateY(-50%);
+    }
+
+    .hokage-image-mobile {
+        display: none;
+    }
+
+    .hokage-description-right {
+        right: 0;
+    }
+}

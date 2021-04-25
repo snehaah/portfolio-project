@@ -1,0 +1,77 @@
+@import "style.css";
+
+.clans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clan {
+    margin: 32px 0;
+    max-width: 800px;
+}
+
+.clan-heading {
+    display: flex;
+    align-items: center;
+}
+
+.clan-area-left, .clan-area-right {
+    height: 5rem;
+    border-top: var(--color-primary) solid 1px;
+    padding: 16px;
+    margin-top: 64px;
+}
+
+.clan-area-left {
+    width: 20%;
+}
+
+.clan-area-right {
+    flex-grow: 1;
+}
+
+.clan-title {
+    font-size: 1.5rem;
+}
+
+.clan-icon {
+    margin: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: var(--color-primary) solid 2px;
+    overflow: hidden;
+}
+
+.clan-icon > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+    border: white solid 1px;
+}
+
+.clan-description {
+    margin: auto;
+    text-align: justify;
+    text-indent: 2rem;
+    line-height: 1.5;
+    padding: 0 24px;
+}
+
+/*Tablet styles*/
+@media all and (min-width: 600px) {
+    .clan-icon {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*Desktop styles*/
+@media all and (min-width: 992px) {
+    .clan-icon {
+        width: 200px;
+        height: 200px;
+    }
+}

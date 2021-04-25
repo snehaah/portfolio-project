@@ -1,83 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/base.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="images/favicon_orange_white.png"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito"/>
-        <title>Shinobi</title>
-    </head>
-    <body>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
-        <header>
-            <div class="title">
-                <img src="images/favicon_white.png" alt="logo" id ="logo">
-                <h1>Konoha</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/glide.core.min.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <link rel="stylesheet" type="text/css" href="css/shinobi.css" />
+    <title>Shinobi</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PWYTKYNT7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PWYTKYNT7');
+    </script>
+</head>
+<body class="theme">
+<div class="skip">
+    <a href="#main">Skip to Main Content</a>
+</div>
+<header>
+    <div class="header-title">
+        <img src="images/ic_konoha_white.png" alt="logo" id="logo" />
+        <h1>Konoha</h1>
+    </div>
+    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
+    <label for="hamburger-toggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+        <label for="hamburger-toggle" class="modal"></label>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clans.html">Clans</a></li>
+            <li class="active"><a href="shinobi.html">
+                <p>Shinobi</p>
+                <img src="images/ic_shuriken.png" alt="" class="icon" />
+            </a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <div class="main-content">
+        <section id="konoha-shinobi" class="edge">
+            <h2 class="section-heading">Shinobi of Konoha</h2>
+            <div class="carousel" id="shinobi-carousel">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/ashura_otsutsuki.png" alt="Ashura Otsutsuki" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/edo_hashirama.png" alt="Edo Hashirama" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/jiraiya_samurai.png" alt="Jiraiya" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/kabuto_tobi.png" alt="Kabuto Tobi" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/kushina_uzumaki.png" alt="Kushina Uzumaki" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/minato_namikaze.png" alt="Minato Namikaze" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/jiraiya_frog.png" alt="Jiraiya" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/obito_childhood.png" alt="Obito" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/shikamaru_nara.png" alt="Shikamaru Nara" />
+                            </div>
+                        </li>
+                        <li class="glide__slide">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/carousel/tsunade_senju.png" alt="Tsunade Senju" />
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="carousel-buttons" data-glide-el="controls">
+                    <button class="carousel-button carousel-button-left fa fa-chevron-left"
+                            data-glide-dir="<"></button>
+                    <button class="carousel-button carousel-button-right fa fa-chevron-right"
+                            data-glide-dir=">"></button>
+                </div>
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="clans.html">Clans</a></li>
-                    <li class="active"><a href="shinobi.html">Shinobi</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main id="main">
-            <div class="description">
-                <h1>Konoha no shinobi</h1>
-                <p>Konohagakure has shinobi who are extremely skilled and dedicated to maintaining the peace and stability across whole nation.</p>
-            </div>  
-
-            <h2>Popular shinobi<h2>
-                <div class="shinobi">
-                    <div class="card">
-                        <img class="card-img" id="s01" src="images/s_naruto.png" alt="Naruto Uzumaki"/>
-                        <h3 class="card-title">Naruto Uzumaki</h3>
+            <div class="shinobi-flip-cards">
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/naruto.png" alt="Naruto" />
+                                <h3 class="shinobi-title">Naruto</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Naruto</p>
+                                    <p>Age</p><p>:</p><p>17</p>
+                                    <p>Height</p><p>:</p><p>166</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Wind</p>
+                                    <p>Clan</p><p>:</p><p>Uzumaki</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s02" src="images/s_sakura.png" alt="Sakura Haruno" />
-                        <h3 class="card-title">Sakura Haruno</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/sakura.png" alt="Sakura" />
+                                <h3 class="shinobi-title">Sakura</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Sakura</p>
+                                    <p>Age</p><p>:</p><p>16</p>
+                                    <p>Height</p><p>:</p><p>161</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Fire</p>
+                                    <p>Clan</p><p>:</p><p>Haruno</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s03" src="images/s_sasuke.png" alt="Sasuke Uchiha" />
-                        <h3 class="card-title">Sasuke Uchiha</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/sasuke.png" alt="Sasuke" />
+                                <h3 class="shinobi-title">Sasuke</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Sasuke</p>
+                                    <p>Age</p><p>:</p><p>17</p>
+                                    <p>Height</p><p>:</p><p>168</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Lightning</p>
+                                    <p>Clan</p><p>:</p><p>Uchiha</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s04" src="images/s_hinata.png" alt="Hinata Hyuga" />
-                        <h3 class="card-title">Hinata Hyuga</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/ino.png" alt="Ino" />
+                                <h3 class="shinobi-title">Ino</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Ino</p>
+                                    <p>Age</p><p>:</p><p>16</p>
+                                    <p>Height</p><p>:</p><p>162.2</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Yang</p>
+                                    <p>Clan</p><p>:</p><p>Yamanaka</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s05" src="images/s_kiba.png" alt="Kiba Inuzuka" />
-                        <h3 class="card-title">Kiba Inuzaka</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/shikamaru.png" alt="Shikamaru" />
+                                <h3 class="shinobi-title">Shikamaru</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Shikamaru</p>
+                                    <p>Age</p><p>:</p><p>17</p>
+                                    <p>Height</p><p>:</p><p>170</p>
+                                    <p>Rank</p><p>:</p><p>Jonin</p>
+                                    <p>Affinity</p><p>:</p><p>Yin</p>
+                                    <p>Clan</p><p>:</p><p>Nara</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s06" src="images/s_ino.png" alt="Ino Yamanaka" />
-                        <h3 class="card-title">Ino Yamanaka</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/choji.png" alt="Choji" />
+                                <h3 class="shinobi-title">Choji</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Choji</p>
+                                    <p>Age</p><p>:</p><p>17</p>
+                                    <p>Height</p><p>:</p><p>172.3</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Earth</p>
+                                    <p>Clan</p><p>:</p><p>Akimichi</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s07" src="images/s_shino.png" alt="Shino Aburame" />
-                        <h3 class="card-title">Shino Aburame</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/hinata.png" alt="Hinata" />
+                                <h3 class="shinobi-title">Hinata</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Hinata</p>
+                                    <p>Age</p><p>:</p><p>16</p>
+                                    <p>Height</p><p>:</p><p>160</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Fire</p>
+                                    <p>Clan</p><p>:</p><p>Hyuga</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s08" src="images/s_shikamaru.png" alt="Shikamaru Nara" />
-                        <h3 class="card-title">Shikamaru Nara</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/kiba.png" alt="Kiba" />
+                                <h3 class="shinobi-title">Kiba</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Kiba</p>
+                                    <p>Age</p><p>:</p><p>17</p>
+                                    <p>Height</p><p>:</p><p>169.1</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Earth</p>
+                                    <p>Clan</p><p>:</p><p>Inuzaka</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img class="card-img" id="s09" src="images/s_choji.png" alt="Choji Akimichi"/>
-                        <h3 class="card-title">Choji Akimichi</h3>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/shino.png" alt="Shino" />
+                                <h3 class="shinobi-title">Shino</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Shino</p>
+                                    <p>Age</p><p>:</p><p>16</p>
+                                    <p>Height</p><p>:</p><p>160</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Earth</p>
+                                    <p>Clan</p><p>:</p><p>Aburame</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/asuma.png" alt="Asuma" />
+                                <h3 class="shinobi-title">Asuma</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Asuma</p>
+                                    <p>Age</p><p>:</p><p>31</p>
+                                    <p>Height</p><p>:</p><p>190.8</p>
+                                    <p>Rank</p><p>:</p><p>Jonin</p>
+                                    <p>Affinity</p><p>:</p><p>Wind</p>
+                                    <p>Clan</p><p>:</p><p>Sarutobi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/guy.png" alt="Might Guy" />
+                                <h3 class="shinobi-title">Might Guy</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Might Guy</p>
+                                    <p>Age</p><p>:</p><p>31</p>
+                                    <p>Height</p><p>:</p><p>184</p>
+                                    <p>Rank</p><p>:</p><p>Jonin</p>
+                                    <p>Affinity</p><p>:</p><p>Fire</p>
+                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/iruka.png" alt="Iruka" />
+                                <h3 class="shinobi-title">Iruka</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Iruka</p>
+                                    <p>Age</p><p>:</p><p>27</p>
+                                    <p>Height</p><p>:</p><p>178</p>
+                                    <p>Rank</p><p>:</p><p>Chunin</p>
+                                    <p>Affinity</p><p>:</p><p>Fire</p>
+                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/itachi.png" alt="Itachi" />
+                                <h3 class="shinobi-title">Itachi</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Itachi</p>
+                                    <p>Age</p><p>:</p><p>21</p>
+                                    <p>Height</p><p>:</p><p>178</p>
+                                    <p>Rank</p><p>:</p><p>Exiled</p>
+                                    <p>Affinity</p><p>:</p><p>Fire</p>
+                                    <p>Clan</p><p>:</p><p>Uchiha</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/jiraiya.png" alt="Jiraiya" />
+                                <h3 class="shinobi-title">Jiraiya</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Jiraiya</p>
+                                    <p>Age</p><p>:</p><p>54</p>
+                                    <p>Height</p><p>:</p><p>191.2</p>
+                                    <p>Rank</p><p>:</p><p>Jonin</p>
+                                    <p>Affinity</p><p>:</p><p>Fire</p>
+                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/kakashi.png" alt="Kakashi" />
+                                <h3 class="shinobi-title">Kakashi</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Kakashi</p>
+                                    <p>Age</p><p>:</p><p>31</p>
+                                    <p>Height</p><p>:</p><p>181</p>
+                                    <p>Rank</p><p>:</p><p>Jonin</p>
+                                    <p>Affinity</p><p>:</p><p>Lightning</p>
+                                    <p>Clan</p><p>:</p><p>Hatake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/orouchimaru.png" alt="Orouchimaru" />
+                                <h3 class="shinobi-title">Orouchimaru</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Orouchimaru</p>
+                                    <p>Age</p><p>:</p><p>54</p>
+                                    <p>Height</p><p>:</p><p>172</p>
+                                    <p>Rank</p><p>:</p><p>Anbu</p>
+                                    <p>Affinity</p><p>:</p><p>Wind</p>
+                                    <p>Clan</p><p>:</p><p>N/A</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/shikaku.png" alt="Shikaku" />
+                                <h3 class="shinobi-title">Shikaku</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Shikaku</p>
+                                    <p>Age</p><p>:</p><p>42</p>
+                                    <p>Height</p><p>:</p><p>175.2</p>
+                                    <p>Rank</p><p>:</p><p>Jonin</p>
+                                    <p>Affinity</p><p>:</p><p>Yin</p>
+                                    <p>Clan</p><p>:</p><p>Nara</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card shinobi-card">
+                    <div class="flip-card-inner shinobi-card-ratio">
+                        <div class="flip-card-front">
+                            <div class="shinobi-image">
+                                <img src="images/shinobi/tsunade.png" alt="Tsunade" />
+                                <h3 class="shinobi-title">Tsunade</h3>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <div class="shinobi-stats">
+                                <div class="shinobi-stats-grid">
+                                    <p>Name</p><p>:</p><p>Tsunade</p>
+                                    <p>Age</p><p>:</p><p>55</p>
+                                    <p>Height</p><p>:</p><p>163.1</p>
+                                    <p>Rank</p><p>:</p><p>Kage</p>
+                                    <p>Affinity</p><p>:</p><p>Lightning</p>
+                                    <p>Clan</p><p>:</p><p>Senju</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-        </main>
-
-        <footer> 
-            <p>Allied shinobi nations &copy; Sneha Hegde, 2021</p>
-        </footer>
-
-    </body>
-</html> 
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>Allied shinobi nations &copy; Sneha Hegde, 2021</p>
+    </footer>
+</main>
+<script type="text/javascript">
+    new Glide('#shinobi-carousel', {}).mount();
+</script>
+</body>
+</html>

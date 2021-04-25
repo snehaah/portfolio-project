@@ -1,96 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="images/favicon_orange_white.png"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito"/>
-        <title>Clans</title>
-    </head>
-    <body>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
-        <header>
-            <div class="title">
-                <img src="images/favicon_white.png" alt="logo" id ="logo">
-                <h1>Konoha</h1>
-            </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="clans.html">Clans</a></li>
-                    <li><a href="shinobi.html">Shinobi</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/clans.css" />
+    <title>Clans</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PWYTKYNT7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-        <main id="main">
-            <div class="description">
-                <h1>Clans of Konohagakure</h1>
-                <p>Within the village there are many powerful and well respected clans. 
-                    Of these there are four clans which are regarded as noble clans. 
-                    These are the: Aburame, Akimichi, Hyūga and Uchiha clans — the latter of which was regarded as the most powerful clan in the village.</p>
-            </div>
-
+        gtag('config', 'G-5PWYTKYNT7');
+    </script>
+</head>
+<body class="theme">
+<div class="skip">
+    <a href="#main">Skip to Main Content</a>
+</div>
+<header>
+    <div class="header-title">
+        <img src="images/ic_konoha_white.png" alt="logo" id="logo" />
+        <h1>Konoha</h1>
+    </div>
+    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
+    <label for="hamburger-toggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+        <label for="hamburger-toggle" class="modal"></label>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="clans.html">
+                <p>Clans</p>
+                <img src="images/ic_shuriken.png" alt="" class="icon" />
+            </a></li>
+            <li><a href="shinobi.html">Shinobi</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <div class="main-content">
+        <section id="clans">
+            <h2 class="section-heading">Clans</h2>
             <div class="clans">
-                <div class="card">
-                    <img id="c01" src="images/Aburame_Symbol.png" alt="Aburame symbol" />
-                    <h2 class="card-title">Aburame clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/aburame_symbol.png" alt="Aburame Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Aburame Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Aburame Clan (Aburame Ichizoku) is one of the four noble clans of Konohagakure.
+                            At birth, members of this clan are offered to several special breeds of insects as a nest, residing just under their host's skin.
+                            These insects will then live in symbiosis with their host from that point on. Because of this, its members are characterised by their use of insects as weapons.
+                            The clan members may also carry additional insects in jars or gourds with them on missions.
+                            The insects can leave and enter their host's body through various pores.
+                            They feed on chakra as a food source, making them quite deadly.
+                            The relationship between the shinobi and the insects is mutually beneficial.
+                            The host grants the insects shelter and allows them to feed off their chakra, their body becoming a living hive of tens of thousands of these insects,
+                            and in return the insects do the user's bidding, allowing the shinobi to perform ninjutsu-like techniques without the use of hand seals or chakra conversion.
+                            A major defining trait of the Aburame clan is that all of its known members' eyes are obscured usually by glasses,
+                            as well as they wear clothing that usually cover up most of their body.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c02" src="images/Akimichi_Symbol.png" alt="Akimichi symbol" />
-                    <h2 class="card-title">Akimichi clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/akimichi_symbol.png" alt="Akimichi Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Akimichi Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Akimichi Clan (Akimichi Ichizoku) is one of the four noble clans of Konohagakure.
+                            Many of their clan's techniques revolve around the manipulation of their bodyweight and size through the use of Yang Release.
+                            It has had fifteen family heads, with Chōza Akimichi being the fifteenth. Chōji Akimichi is slated to become the sixteenth head.
+                            Members of the clan possess great physical strength and are able to quickly convert calories into chakra, which they then use in their various secret techniques.
+                            Most of these techniques rapidly consume the user's chakra during use, and maintaining them during a prolonged battle can be tiring.
+                            For this reason the Akimichi have high chakra levels and eat a lot in order to build up or replenish their chakra reserves.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c03" src="images/Hatake_Symbol.png" alt="Hatake symbol" />
-                    <h2 class="card-title">Hatake clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/hatake_symbol.png" alt="Hatake Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Hatake Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Hatake Clan (Hatake Ichizoku) is one of the many clans that reside in Konohagakure.
+                            Renowned ninja that belong to this clan are: Konoha's White Fang (Konoha no Shiroi Kiba) Sakumo, and his son Copy Ninja Kakashi (Kopī Ninja no Kakashi).
+                            The latter would later become the Sixth Hokage following the end of the Fourth Shinobi World War.
+                            The clan possess a heirloom called the White Light Chakra Sabre, which produces white chakra when swung.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c04" src="images/Hyuga_Symbol.png" alt="Hyuga symbol" />
-                    <h2 class="card-title">Hyuga clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/hyuga_symbol.png" alt="Hyuga Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Hyuga Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Hyūga Clan (Hyūga Ichizoku) is one of the four noble clans of Konohagakure, as well as the strongest clan in the village.
+                            All members born into this clan possess the Byakugan, a kekkei genkai that gives them extended fields of vision and the ability to see through solid objects and
+                            even the chakra circulatory system, amongst other things.
+                            Members of this clan also possess an innate ability which allows them to expel chakra from any of the tenketsu in their body.
+                            The Hyūga clan are descendants from the Ōtsutsuki clan, specifically from Hamura Ōtsutsuki's lineage.
+                            As a result, they are also distant cousins of the Uchiha, Senju, Uzumaki, and Kaguya clans.
+                            They are considered to be one of, if not currently, the most powerful clan in Konohagakure.
+                            Their fame and prowess stretches far and wide, leading others to both praise and covet their abilities.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c05" src="images/Inuzuka_Symbol.png" alt="Inuzuka symbol" />
-                    <h2 class="card-title">Inuzaka clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/inuzuka_symbol.png" alt="Inuzaka Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Inuzaka Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Inuzuka Clan ( Inuzuka Ichizoku) or Inuzuka Family (Inuzuka-ke) is a family of shinobi in Konohagakure known for their use of ninken as fighting companions
+                            and are easily identified by the distinctive red fang markings on their cheeks.
+                            The shinobi and canine allies fight using Cooperation Ninjutsu, such as the Fang Passing Fang or Fang Rotating Fang techniques amongst others,
+                            that take advantage of their teamwork and their sharp claws and teeth.
+                            The clan members are also able to communicate with canines even if the dogs cannot talk.
+                            The members of this clan, much like their canine partners, have greatly enhanced senses, especially their sense of smell.
+                            By concentrating chakra to their noses, this sense is amplified to an even greater extent allowing the user to be able to detect,
+                            track and monitor targets from a fairly long distance away.
+                            The clan's fighting style primarily revolves around their enhanced speed, strength and agility granted by
+                            the Four Legs Technique and other canine-based attacks, in conjunction with the tactical advantages granted by their heightened senses.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c06" src="images/Kohaku_Symbol.png" alt="Kohaku symbol" />
-                    <h2 class="card-title">Kohaku clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/nara_symbol.png" alt="Nara Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Nara Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Nara Clan (Nara Ichizoku) or Nara Family (Nara-ke) is one of the many clans of Konohagakure.
+                            They are known for tending deer and their ability to manipulate shadows through the use of Yin Release.
+                            Two of its members, Shikaku and his son Shikamaru, are well known for their high-level of intelligence, and both have served as advisors to the Hokage.
+                            After Shikaku's death, Shikamaru became the head of the clan.
+                            The Nara clan has a special relationship with the Akimichi and the Yamanaka clan.
+                            For several generations, members of these three families have formed "Ino–Shika–Chō" trios, named after the first part of the names of the members
+                            with the Nara members being the "Shika" in the trio.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c07" src="images/Nara_Symbol.png" alt="Nara symbol" />
-                    <h2 class="card-title">Nara clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/sarutobi_symbol.png" alt="Sarutobi Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Sarutobi Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Sarutobi Clan (Sarutobi Ichizoku) is an influential clan from Konohagakure.
+                            It has produced several renowned members who have held positions of high authority, including the Third Hokage; whose son, Asuma,
+                            held membership in the Twelve Guardian Ninja, while his other child served directly under the Hokage along with their spouse as Anbu.
+                            All known members have also been devout observers of the Will of Fire.
+                            After Konohagakure's formation following the Warring States Period, the Sarutobi were amongst the first set of clans to ally themselves with
+                            the Senju and Uchiha-founded village, alongside the Shimura clan.
+                            The Sarutobi are famous for their high willpower, and exceptional strength.
+                            The clan also uses hidden ninjutsu involving the Fire Release nature transformation.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c08" src="images/Sarutobi_Symbol.png" alt="Sarutobi symbol" />
-                    <h2 class="card-title">Sarutobi clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/senju_symbol.png" alt="Senju Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Senju Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Senju Clan (Senju Ichizoku) was one of the clans responsible for founding the first shinobi village: Konohagakure — the other being their rival Uchiha clan.
+                            Although the clan itself no longer appears to exist as a group, the Senju continue to influence Konoha's politics through their philosophy of the Will of Fire and
+                            the corresponding interpretation of the role of the Hokage position.
+                            As such, three Senju have achieved the position of Hokage.
+                            As descendants of Asura Ōtsutsuki, the Senju inherited his powerful life force and chakra, and through Hashirama Senju eventually manifested as Wood Release.
+                            Compared to other shinobi clans, the Senju didn't specialise in one area, instead mastering ninjutsu, taijutsu, and genjutsu to give them a wide variety of skills
+                            to combat their enemies.
+                            Due to this they acquired their name,"Senju" (literally meaning: "a thousand skills", "a thousand hands"), in reference to their being "the clan with a thousand skills"
+                            ("sen no te o motsu ichizoku").
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c09" src="images/Shimura_Symbol.png" alt="Shimura symbol" />
-                    <h2 class="card-title">Shimura clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/uchiha_symbol.png" alt="Uchiha Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Uchiha Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Uchiha Clan (Uchiha Ichizoku) is one of the four noble clans of Konohagakure, reputed to be the village's strongest because of their Sharingan and natural battle prowess.
+                            After helping found Konoha decades ago, the Uchiha grew increasingly isolated from the village's affairs, culminating in most of their deaths during the Uchiha Clan Downfall.
+                            Few Uchiha now survive into the present day.
+                            The Uchiha are descendants of Indra Ōtsutsuki, the elder son of Hagoromo Ōtsutsuki.
+                            Through Indra, the Uchiha inherited Hagoromo's "eyes", granting them powerful spiritual energy and chakra.
+                            As part of the so-called "Curse of Hatred" first displayed by Indra, Uchiha are subject to powerful emotions: these emotions typically start as love for a friend or
+                            family member that then become overpowering hatred when the object of their love is lost.
+                            This loss, whether actually experienced or merely threatened, awakens an Uchiha's Sharingan. It is due to the Sharingan that the
+                            Uchiha have received much of their fame and notoriety.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c10" src="images/Uchiha_Symbol.png" alt="Uchiha symbol" />
-                    <h2 class="card-title">Uchiha clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/uzumaki_symbol.png" alt="Uzumaki Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Uzumaki Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Uzumaki Clan (Uzumaki Ichizoku) is formerly a prominent clan in Uzushiogakure.
+                            Since its disbandment, most of its known members reside in Konohagakure.
+                            The Uzumaki, being descendants of Asura Ōtsutsuki, also shared distant blood relation with the Senju clan.
+                            Through the years, the Uzumaki and Senju kept close ties, with members at times marrying between clans, as with Hashirama Senju and Mito Uzumaki.
+                            Following the founding of Konohagakure at the end of the Warring States Period, the Senju chose to symbolise their clans' friendship by adding the
+                            Uzumaki's emblem to Konoha's flak jackets.
+                            Konoha and the Uzumaki's own Uzushiogakure remained close allies over the following decades, with the Uzumaki providing fūinjutsu (among other things) to
+                            Konoha whenever there was a need.
+                            In time, the Uzumaki Clan's Mask Storage Temple was even constructed on Konoha's outskirts.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c11" src="images/Uzumaki_Symbol.png" alt="Uzumaki symbol" />
-                    <h2 class="card-title">Uzumaki clan</h2>
+                <div class="clan">
+                    <div class="clan-heading">
+                        <div class="clan-area-left"></div>
+                        <div class="clan-icon">
+                            <img src="images/clan_logo/yamanaka_symbol.png" alt="Yamanaka Clan" />
+                        </div>
+                        <div class="clan-area-right">
+                            <h3 class="clan-title">Yamanaka Clan</h3>
+                        </div>
+                    </div>
+                    <div class="clan-description">
+                        <p>
+                            The Yamanaka Clan (Yamanaka Ichizoku) is a family of shinobi found in Konohagakure.
+                            They specialise in mind related techniques, and they own and run a flower shop in the village.
+                            They traditionally lead the Konoha Barrier Team.
+                            The members of this clan specialise in mind-related techniques which makes them experts at intelligence gathering, espionage and interrogation amongst other things.
+                            They have also displayed sensory abilities and their techniques include transferring their consciousness, reading minds and communicating telepathically.
+                            The flower symbol of this clan is the bush  clover which symbolises a "positive love".
+                            Most members of the Yamanaka clan wear their hair in a long ponytail, which appears to be traditional.
+                        </p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img id="c12" src="images/Yamanaka_Symbol.png" alt="Yamanaka symbol" />
-                    <h2 class="card-title">Yamanaka clan</h2>
-                </div>
+
             </div>
-            
-        </main>
-
-        <footer> 
-            <p>Allied shinobi nations &copy; Sneha Hegde, 2021</p>
-        </footer>
-
-    </body>
-</html> 
-    
+        </section>
+    </div>
+    <footer>
+        <p>Allied shinobi nations &copy; Sneha Hegde, 2021</p>
+    </footer>
+</main>
+</body>
+</html>

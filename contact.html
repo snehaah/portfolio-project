@@ -1,67 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="images/favicon_orange_white.png"/>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito"/>
-        <title>Contact</title>
-    </head>
-    <body>
-        <div class="skip"><a href="#main">Skip to Main Content</a></div>
-        <header>
-            <div class="title">
-                <img src="images/favicon_white.png" alt="logo" id ="logo">
-                <h1>Konoha</h1>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <title>Contact</title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5PWYTKYNT7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-5PWYTKYNT7');
+    </script>
+</head>
+<body class="theme">
+<div class="skip">
+    <a href="#main">Skip to Main Content</a>
+</div>
+<header>
+    <div class="header-title">
+        <img src="images/ic_konoha_white.png" alt="logo" id="logo" />
+        <h1>Konoha</h1>
+    </div>
+    <input type="checkbox" name="hamburger-toggle" id="hamburger-toggle">
+    <label for="hamburger-toggle" class="hamburger-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav>
+        <label for="hamburger-toggle" class="modal"></label>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clans.html">Clans </a></li>
+            <li><a href="shinobi.html">Shinobi </a></li>
+            <li class="active"><a href="contact.html">
+                <p>Contact</p>
+                <img src="images/ic_shuriken.png" alt="" class="icon" />
+            </a></li>
+        </ul>
+    </nav>
+</header>
+<main id="main">
+    <div class="main-content">
+        <section id="request-mission">
+            <h2 class="section-heading">Request a mission?</h2>
+            <div class="section-text">
+                <p>You can connect with us using the following form. Shinobi will be assigned based on the rank
+                    requirement of the mission.</p>
             </div>
-            <nav>
-                <ul class="navbar">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="clans.html">Clans</a></li>
-                    <li><a href="shinobi.html">Shinobi</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <main id="main"> 
-            <div class="contact-container">
-                <div class="contact-banner">
-                    <h1>Request a mission?</h1>
-                    <p>You can connect with us using the following form. Shinobi will be assigned based on the rank requirement of the mission.</p>
-                </div>
-                
-                <div class="contact-form">
-                    <form>
-                        <div class="field">
-                            <label for="name">Name</label>
-                            <input id="name" name="name" />
-                        </div>
-                        <div class="field">
-                            <label for="email">Email</label>
-                            <input id="email" name="email" type="email"/>
-                        </div>
-                        <div class="field">
-                            <label for="mission">Description</label>
-                            <textarea id="mission" name="mission" rows="4"></textarea>
-                        </div>
-                        <div class="field">
-                            <label for="rank">Rank</label>
-                            <input id="rank" name="rank"/>
-                        </div>
-                        <div class="field">
-                            <input type="submit" value="Submit" class="form-submit">
-                        </div>
-                    </form>
-                </div>
+            <div class="section-text contact-form">
+                <form method="post" action="https://formspree.io/f/xgervjzb">
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input id="name" name="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input id="email" name="email" type="email" />
+                    </div>
+                    <div class="field">
+                        <label for="mission">Description</label>
+                        <textarea id="mission" name="mission" rows="4"></textarea>
+                    </div>
+                    <div class="field">
+                        <label for="rank">Rank</label>
+                        <input id="rank" name="rank" />
+                    </div>
+                    <div class="field">
+                        <input type="submit" value="Submit" class="form-submit">
+                    </div>
+                </form>
             </div>
-
-        </main>
-
-        <footer>
-            <p>Allied shinobi nations &copy; Sneha Hegde, 2021</p>
-        </footer>
-    </body>
+        </section>
+    </div>
+    <footer>
+        <p>Allied shinobi nations &copy; Sneha Hegde, 2021</p>
+    </footer>
+</main>
+</body>
 </html>
